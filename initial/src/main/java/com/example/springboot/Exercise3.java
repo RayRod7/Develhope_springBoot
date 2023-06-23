@@ -94,19 +94,4 @@ public class Exercise3 {
         return ResponseEntity.notFound().build();
     }
 
-
-    /*
-    {
-    "name": "Classic Margherita Pizza",
-    "description": "Thin crust pizza topped with ripe tomatoes, fresh basil leaves, and mozzarella cheese.",
-    "price": "11.99"
-}
-
-Exercise 5: Create a PutMapping to update the price of a meal by name
-1 - Create a new endpoint "/meal/{name}/price" using the @PutMapping annotation.
-2 - In the method, add a PathVariable for the name and a RequestBody for the updated price.
-3 - Update the price of the meal with the corresponding name using the information from the RequestBody.
-*/
-
-
 }
