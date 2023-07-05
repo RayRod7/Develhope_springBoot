@@ -1,6 +1,6 @@
 package com.example.springboot.service;
 
-import com.example.springboot.Meal;
+import com.example.springboot.model.Meal;
 import com.example.springboot.dao.MealDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,6 @@
 package com.example.springboot.dao;
 
-import com.example.springboot.Meal;
-import org.springframework.http.ResponseEntity;
+import com.example.springboot.model.Meal;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

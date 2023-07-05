@@ -1,6 +1,6 @@
-package controller;
+package com.example.springboot.controller;
 
-import com.example.springboot.Meal;
+import com.example.springboot.model.Meal;
 import com.example.springboot.service.MealService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

@@ -1,6 +1,6 @@
 package com.example.springboot;
 
-import model.Meal;
+import com.example.springboot.model.Meal;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +13,7 @@ import java.util.List;
 
 
 //Exercise 2.1
-
+/*
 @RestController
 public class Exercise2 {
     List<Meal> mealList = Arrays.asList(
@@ -25,20 +25,7 @@ public class Exercise2 {
                     12.99),
             new Meal("Savory Steakhouse Burger",
                     "Juicy grilled beef patty topped with melted cheese, crispy bacon, fresh lettuce, and tangy BBQ sauce. Served with seasoned fries.",
-                    10.99),
-            new Meal("Veggie Fiesta Bowl",
-                    "A colorful bowl packed with black beans, roasted corn, diced tomatoes, avocado, and a zesty lime-cilantro dressing.",
-                    9.99),
-            new Meal("Teriyaki Salmon Stir-Fry",
-                    "Succulent salmon fillet glazed with teriyaki sauce, served over a bed of stir-fried vegetables and steamed jasmine rice.",
-                    14.99),
-            new Meal("Classic Margherita Pizza",
-                    "Thin crust pizza topped with ripe tomatoes, fresh basil leaves, and mozzarella cheese.",
-                    11.99),
-            new Meal("Spicy Szechuan Noodles",
-                    "Stir-fried noodles tossed in a fiery Szechuan sauce with bell peppers, mushrooms, and tender strips of chicken.",
-                    13.99)
-
+                    10.99)
     );
 
     @GetMapping("/meals")
@@ -60,19 +47,7 @@ class MealByNameController {
                     12.99),
             new Meal("Savory Steakhouse Burger",
                     "Juicy grilled beef patty topped with melted cheese, crispy bacon, fresh lettuce, and tangy BBQ sauce. Served with seasoned fries.",
-                    10.99),
-            new Meal("Veggie Fiesta Bowl",
-                    "A colorful bowl packed with black beans, roasted corn, diced tomatoes, avocado, and a zesty lime-cilantro dressing.",
-                    9.99),
-            new Meal("Teriyaki Salmon Stir-Fry",
-                    "Succulent salmon fillet glazed with teriyaki sauce, served over a bed of stir-fried vegetables and steamed jasmine rice.",
-                    14.99),
-            new Meal("Classic Margherita Pizza",
-                    "Thin crust pizza topped with ripe tomatoes, fresh basil leaves, and mozzarella cheese.",
-                    11.99),
-            new Meal("Spicy Szechuan Noodles",
-                    "Stir-fried noodles tossed in a fiery Szechuan sauce with bell peppers, mushrooms, and tender strips of chicken.",
-                    13.99)
+                    10.99)
 
     );
 
@@ -101,19 +76,7 @@ class MealByDescriptionController {
                     12.99),
             new Meal("Savory Steakhouse Burger",
                     "Juicy grilled beef patty topped with melted cheese, crispy bacon, fresh lettuce, and tangy BBQ sauce. Served with seasoned fries.",
-                    10.99),
-            new Meal("Veggie Fiesta Bowl",
-                    "A colorful bowl packed with black beans, roasted corn, diced tomatoes, avocado, and a zesty lime-cilantro dressing.",
-                    9.99),
-            new Meal("Teriyaki Salmon Stir-Fry",
-                    "Succulent salmon fillet glazed with teriyaki sauce, served over a bed of stir-fried vegetables and steamed jasmine rice.",
-                    14.99),
-            new Meal("Classic Margherita Pizza",
-                    "Thin crust pizza topped with ripe tomatoes, fresh basil leaves, and mozzarella cheese.",
-                    11.99),
-            new Meal("Spicy Szechuan Noodles",
-                    "Stir-fried noodles tossed in a fiery Szechuan sauce with bell peppers, mushrooms, and tender strips of chicken.",
-                    13.99)
+                    10.99)
 
     );
 
@@ -143,19 +106,7 @@ class MealByPrice {
                     12.99),
             new Meal("Savory Steakhouse Burger",
                     "Juicy grilled beef patty topped with melted cheese, crispy bacon, fresh lettuce, and tangy BBQ sauce. Served with seasoned fries.",
-                    10.99),
-            new Meal("Veggie Fiesta Bowl",
-                    "A colorful bowl packed with black beans, roasted corn, diced tomatoes, avocado, and a zesty lime-cilantro dressing.",
-                    9.99),
-            new Meal("Teriyaki Salmon Stir-Fry",
-                    "Succulent salmon fillet glazed with teriyaki sauce, served over a bed of stir-fried vegetables and steamed jasmine rice.",
-                    14.99),
-            new Meal("Classic Margherita Pizza",
-                    "Thin crust pizza topped with ripe tomatoes, fresh basil leaves, and mozzarella cheese.",
-                    11.99),
-            new Meal("Spicy Szechuan Noodles",
-                    "Stir-fried noodles tossed in a fiery Szechuan sauce with bell peppers, mushrooms, and tender strips of chicken.",
-                    13.99)
+                    10.99)
 
     );
 
@@ -173,3 +124,4 @@ class MealByPrice {
     }
 
 }
+*/

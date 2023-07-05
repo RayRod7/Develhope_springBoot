@@ -1,13 +1,12 @@
 package com.example.springboot;
 
-import model.Meal;
+import com.example.springboot.model.Meal;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
+/*
 @RestController
 public class Exercise3 {
 
@@ -57,7 +56,6 @@ public class Exercise3 {
                 return ResponseEntity.ok("Meal Deleted");
             }
         }
-        //this.mealList.removeIf(meal -> meal.getName().equals(mealName));
         return ResponseEntity.notFound().build();
     }
 
@@ -95,3 +93,4 @@ public class Exercise3 {
     }
 
 }
+*/
