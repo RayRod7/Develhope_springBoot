@@ -2,10 +2,16 @@ package com.example.springboot.service;
 
 import com.example.springboot.model.Meal;
 import com.example.springboot.dao.MealDao;
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.http.exceptions.UnirestException;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import static com.example.springboot.controller.MealController.MAX_WINTER_TEMP;
 
 @Service
 public class MealService {
@@ -34,5 +40,33 @@ public class MealService {
 
     public List<Meal> getMeals(){
         return mealDao.getMeals();
+    }
+
+    private Double getCurrentTemperatureInCelsius() {
+        try {
+            JSONObject response =
+                    Unirest.get("https://open-meteo.com/en/docs#latitude=40.8762&longitude=14.5195")
+                            .asJson().getBody().getObject();
+
+            return response.getJSONObject("current_weather").getDouble("temperature");
+        } catch (UnirestException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public List<Meal> getWinterMeals() {
+        List<Meal> meals = getMeals();
+        Double currentTemp = getCurrentTemperatureInCelsius();
+        List<Meal> winterMeals = new ArrayList<>();
+        if (currentTemp < MAX_WINTER_TEMP){
+            for (Meal m : meals){
+                if(m.getWinterMeal()){
+                    winterMeals.add(m);
+                }
+            }
+        }
+
+        return winterMeals;
+
     }
 }

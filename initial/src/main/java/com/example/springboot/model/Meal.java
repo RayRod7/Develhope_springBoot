@@ -13,6 +13,7 @@ public class Meal {
     String name;
     String description;
     Double price;
+    Boolean isWinterMeal;
 
     public Meal(String name, String description, Double price) {
         this.name = name;
@@ -53,5 +54,13 @@ public class Meal {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Boolean getWinterMeal() {
+        return isWinterMeal;
+    }
+
+    public void setWinterMeal(Boolean winterMeal) {
+        isWinterMeal = winterMeal;
     }
 }

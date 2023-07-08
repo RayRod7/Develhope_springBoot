@@ -37,4 +37,13 @@ public class MealController {
         mealService.deleteMeal(mealName);
         return ResponseEntity.ok("Meal deleted");
     }
+
+    public final static Double MAX_WINTER_TEMP = 20.00;
+
+
+    @GetMapping("/meal/winter")
+    public ResponseEntity<List<Meal>> getWinterMeals(){
+        List<Meal> winterMeals =  mealService.getWinterMeals();
+        return ResponseEntity.ok().body(winterMeals);
+    }
 }
