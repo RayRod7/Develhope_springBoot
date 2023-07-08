@@ -1,7 +1,7 @@
 package com.example.springboot.service;
 
 import com.example.springboot.model.Ingredient;
-import com.example.springboot.dao.IngredientRepository;
+import com.example.springboot.repository.IngredientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
